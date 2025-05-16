@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.topic {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.topic h3 {
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.resources {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.resources a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Basic interactivity */
+.topic {
+    transition: transform 0.2s ease-in-out;
+}
+
+.topic:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
